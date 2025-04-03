@@ -5,11 +5,13 @@
 :root {
     // Couleur de base
     --color-white: #fff;
-    --color-black: #000;
+    --color-black: #001514;
 
     // Couleurs du projet
-    --color-primary: #6aa84f;
+    --color-primary: #1c7c54;
+    --color-primary-light: #c3d898;
+    --color-secondary: #1b512d;
 
-    --color-bg-primary: #212121;
-    --color-bg-secondary: #3e92cc;
+    --color-fail: #f6511d;
+    --color-neutral-dark: #444;
 }
