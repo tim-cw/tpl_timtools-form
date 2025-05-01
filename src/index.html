@@ -1,113 +1,215 @@
-<!-- 
-    Header
--->
-<a href="/">
-    <img src="assets/images/logo-timpeace.svg" alt="timpeace" />
-</a>
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Timtools | CW4.S12</title>
 
-<ul>
-    <li>
-        <a href="#">Accueil</a>
-    </li>
-    <li>
-        <a href="#essences">Les essences</a>
-    </li>
-    <li>
-        <a href="#engagez-vous">Engagez-vous</a>
-    </li>
-</ul>
+        <link rel="stylesheet" href="styles/main.css" />
 
-<!-- 
-      Section héro
-  -->
-<h1>
-    Protégeons nos
-    <span>forêts</span>
-</h1>
-<p>
-    Protéger les forêts est essentiel pour préserver la biodiversité et lutter contre le changement climatique. Notre site offre des ressources et des actions
-    concrètes pour aider à sauvegarder ces écosystèmes vitaux pour l'avenir de notre planète.
-</p>
-<a href="#engagez-vous">Engagez-vous</a>
-<img src="assets/images/forest.jpg" alt="Photo d'une forêt" />
+        <script src="scripts/main.js" defer></script>
+    </head>
 
-<!-- 
-      Section essences 
-  -->
-<h2>Les essences d’arbre</h2>
-<p>
-    Elles jouent un rôle crucial dans la biodiversité et dans la préservation de l'environnement. Elles fournissent des habitats pour de nombreuses espèces
-    animales et végétales, tout en contribuant à la régulation du climat et à la qualité de l'air. Les différentes essences d'arbres offrent également une
-    grande variété de ressources pour l'industrie, l'alimentation et la médecine. Il est donc essentiel de protéger et de préserver la diversité des essences
-    d'arbres pour assurer la santé et la durabilité de notre planète.
-</p>
+    <body>
+        <header class="header">
+            <div class="wrapper">
+                <a class="header__brand" href="/">
+                    <img src="assets/images/logo-timpeace.svg" alt="timpeace" />
+                </a>
+                <nav class="nav">
+                    <ul>
+                        <li>
+                            <a href="#" class="nav__item">Accueil</a>
+                        </li>
+                        <li>
+                            <a href="#essences" class="nav__item">Les essences</a>
+                        </li>
+                        <li>
+                            <a href="#engagez-vous" class="nav__item">Engagez-vous</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-<!-- Carte arbre -->
-<h3>Chêne</h3>
-<p>Arbre majestueux et feuillu, utilisé pour le bois de construction et le mobilier</p>
+        <section class="hero">
+            <div class="wrapper">
+                <div class="hero__content">
+                    <h1>
+                        Protégeons
+                        <br />
+                        nos
+                        <span>forêts</span>
+                    </h1>
+                    <p>
+                        Protéger les forêts est essentiel pour préserver la biodiversité et lutter contre le changement climatique. Notre site offre des
+                        ressources et des actions concrètes pour aider à sauvegarder ces écosystèmes vitaux pour l'avenir de notre planète.
+                    </p>
+                    <a href="#engagez-vous" class="button">Engagez-vous</a>
+                </div>
+                <div class="hero__media">
+                    <img src="assets/images/forest.jpg" alt="Photo d'une forêt" />
+                </div>
+            </div>
+        </section>
 
-<!-- Carte arbre -->
-<h3>Érable</h3>
-<p>
-    Arbre feuillu à la beauté remarquable. Son bois est utilisé dans l'ameublement, la sculpture et la construction. Il est aussi connu pour son sirop et sa
-    feuille emblématique du drapeau canadien
-</p>
+        <section class="section section--dark" id="engagez-vous">
+            <div class="wrapper">
+                <div class="section__header">
+                    <h2>Engagez-vous</h2>
+                    <p>
+                        Sauver 10 % de la forêt boréale canadienne, la plus grande jungle nordique encore intouchée, n'est pas plus acceptable que si on
+                        limitait à 10 % la protection de l'Amazonie contre la déforestation.
+                    </p>
+                    <p>Il faut prendre action dès maintenant. Aidez-nous!</p>
+                </div>
 
-<!-- Carte arbre -->
-<h3>Pin</h3>
-<p>Arbre résineux, souvent utilisé pour la construction, la menuiserie et la production de papier. Il est apprécié pour sa résistance et son parfum agréable</p>
+                [VOTRE FORMULAIRE ICI]
+            </div>
+        </section>
 
-<!-- Carte arbre -->
-<h3>Hêtre</h3>
-<p>Arbre feuillu, souvent utilisé pour le bois de chauffage et l'ameublement</p>
+        <section class="section">
+            <div class="wrapper">
+                <div class="section__header">
+                    <h2>Les essences d’arbre</h2>
+                    <p>
+                        Elles jouent un rôle crucial dans la biodiversité et dans la préservation de l'environnement. Elles fournissent des habitats pour de
+                        nombreuses espèces animales et végétales, tout en contribuant à la régulation du climat et à la qualité de l'air. Les différentes
+                        essences d'arbres offrent également une grande variété de ressources pour l'industrie, l'alimentation et la médecine. Il est donc
+                        essentiel de protéger et de préserver la diversité des essences d'arbres pour assurer la santé et la durabilité de notre planète.
+                    </p>
+                </div>
 
-<!-- Carte arbre -->
-<h3>Épicéa</h3>
-<p>Arbre résineux, très utilisé en tant que sapin de Noël et pour le bois de construction</p>
+                <div class="cards">
+                    <div class="card">
+                        <div class="card__media">
+                            <svg class="icon icon--lg">
+                                <use xlink:href="#icon-tree"></use>
+                            </svg>
+                        </div>
+                        <div class="card__content">
+                            <h3>Chêne</h3>
+                            <p>Arbre majestueux et feuillu, utilisé pour le bois de construction et le mobilier</p>
+                        </div>
+                    </div>
+                    <div class="card card--large">
+                        <div class="card__media">
+                            <svg class="icon icon--lg">
+                                <use xlink:href="#icon-leaf"></use>
+                            </svg>
+                        </div>
+                        <div class="card__content">
+                            <h3>Érable</h3>
+                            <p>
+                                Arbre feuillu à la beauté remarquable. Son bois est utilisé dans l'ameublement, la sculpture et la construction. Il est aussi
+                                connu pour son sirop et sa feuille emblématique du drapeau canadien
+                            </p>
+                        </div>
+                    </div>
 
-<!-- Carte arbre -->
-<h3>Saule</h3>
-<p>Arbre à feuilles caduques, utilisé pour l'agroforesterie, la médecine et la vannerie</p>
+                    <div class="card card--large">
+                        <div class="card__media">
+                            <svg class="icon icon--lg">
+                                <use xlink:href="#icon-tree"></use>
+                            </svg>
+                        </div>
+                        <div class="card__content">
+                            <h3>Pin</h3>
+                            <p>
+                                Arbre résineux, souvent utilisé pour la construction, la menuiserie et la production de papier. Il est apprécié pour sa
+                                résistance et son parfum agréable
+                            </p>
+                        </div>
+                    </div>
 
-<!-- Carte arbre -->
-<h3>Orme</h3>
-<p>Arbre feuillu, souvent utilisé pour les aménagements paysagers et l'ombre.</p>
+                    <div class="card">
+                        <div class="card__media">
+                            <svg class="icon icon--lg">
+                                <use xlink:href="#icon-leaf"></use>
+                            </svg>
+                        </div>
+                        <div class="card__content">
+                            <h3>Hêtre</h3>
+                            <p>Arbre feuillu, souvent utilisé pour le bois de chauffage et l'ameublement</p>
+                        </div>
+                    </div>
 
-<a href="#">Voir toutes les essences</a>
+                    <div class="card">
+                        <div class="card__media">
+                            <svg class="icon icon--lg">
+                                <use xlink:href="#icon-tree"></use>
+                            </svg>
+                        </div>
+                        <div class="card__content">
+                            <h3>Épicéa</h3>
+                            <p>Arbre résineux, très utilisé en tant que sapin de Noël et pour le bois de construction</p>
+                        </div>
+                    </div>
 
-<!-- 
-      Section formulaire
-      Pensez-mettre id="engagez-vous" sur cette section pour que le bouton du hero fonctionne
-  -->
+                    <div class="card">
+                        <div class="card__media">
+                            <svg class="icon icon--lg">
+                                <use xlink:href="#icon-leaf"></use>
+                            </svg>
+                        </div>
+                        <div class="card__content">
+                            <h3>Saule</h3>
+                            <p>Arbre à feuilles caduques, utilisé pour l'agroforesterie, la médecine et la vannerie</p>
+                        </div>
+                    </div>
 
-<!-- Fieldset engagez-vous -->
-<h2>Engagez-vous</h2>
-<p>
-    Sauver 10 % de la forêt boréale canadienne, la plus grande jungle nordique encore intouchée, n'est pas plus acceptable que si on limitait à 10 % la
-    protection de l'Amazonie contre la déforestation.
-</p>
-<p>Il faut prendre action dès maintenant. Aidez-nous!</p>
+                    <div class="card">
+                        <div class="card__media">
+                            <svg class="icon icon--lg">
+                                <use xlink:href="#icon-tree"></use>
+                            </svg>
+                        </div>
+                        <div class="card__content">
+                            <h3>Orme</h3>
+                            <p>Arbre feuillu, souvent utilisé pour les aménagements paysagers et l'ombre.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__footer">
+                    <a href="#" class="button">Voir toutes les essences</a>
+                </div>
+            </div>
+        </section>
 
-[Champs ici]
-
-<!-- Fieldset essences -->
-<h2>Les essences</h2>
-<p>
-    Choisir une essence d'arbre indigène favorise la biodiversité et contribue à la préservation de notre écosystème. Optez pour une variété locale, résiliente
-    et adaptée au climat de votre région pour un impact positif sur l'environnement.
-</p>
-
-[Champs ici]
-
-<a href="#">Joindre les rangs</a>
-
-<!-- 
-      Section footer
-  -->
-<a href="/">
-    <img src="assets/images/logo-timpeace.svg" alt="timpeace" />
-</a>
-
-[réseaux sociaux ici]
-
-<p>Tous droits réservés © 2025 timpeace</p>
+        <footer class="footer">
+            <div class="wrapper">
+                <div class="footer__brand">
+                    <a href="/">
+                        <img src="assets/images/logo-timpeace.svg" alt="timpeace" />
+                    </a>
+                </div>
+                <nav class="nav--footer">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use xlink:href="#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use xlink:href="#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use xlink:href="#icon-youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <p>Tous droits réservés © 2025 timpeace</p>
+            </div>
+        </footer>
+    </body>
+</html>

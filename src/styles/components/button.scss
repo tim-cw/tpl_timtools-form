@@ -1,0 +1,21 @@
+/* ==========================================================================
+   button / COMPONENTS
+   ========================================================================== */
+.button {
+    background: var(--color-primary-light);
+    border: 2px var(--color-primary-light) solid;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 16px;
+    color: var(--color-black);
+    transition: all 0.3s $ease-out-quad;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: none;
+        background: none;
+        color: var(--color-primary-light);
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    }
+}

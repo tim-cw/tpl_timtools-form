@@ -1,0 +1,54 @@
+/* ==========================================================================
+   footer / component
+   ========================================================================== */
+
+.footer {
+    background: var(--color-black);
+    padding: 24px;
+
+    .wrapper {
+        display: grid;
+        gap: 30px;
+    }
+    p {
+        color: var(--color-white);
+        opacity: 0.5;
+        text-align: center;
+    }
+}
+.footer__brand {
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px rgba(255, 255, 255, 0.3) solid;
+}
+.nav--footer {
+    display: flex;
+    justify-content: center;
+    ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        gap: 16px;
+        list-style: none;
+
+        a {
+            background: var(--color-primary);
+            border: 2px var(--color-primary) solid;
+            aspect-ratio: 1/1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-white);
+            padding: 9px;
+            border-radius: 100%;
+            transition: all 0.3s $ease-out-quad;
+
+            &:hover {
+                text-decoration: none;
+                background: none;
+                color: var(--color-white);
+                box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.2);
+            }
+        }
+    }
+}
