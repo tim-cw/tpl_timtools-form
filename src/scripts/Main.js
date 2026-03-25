@@ -1,4 +1,4 @@
-import Icons from './utils/Icons';
+import Icons from './utils/Icons.js';
 
 class Main {
   constructor() {
@@ -12,7 +12,6 @@ class Main {
     document.documentElement.classList.add('has-js');
 
     //new ComponentFactory(); N'oublie pas de l'importer
-
     Icons.load();
   }
 }
